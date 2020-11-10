@@ -7,7 +7,8 @@ Checkers game implemented with C language.
 ❌ Taking multiple pieces in one single move is not implemented (Thanks to my laziness) 
 
 # Compiling & Runing the game 
-Clone the repository, open your terminal and run the following command: 
+Clone the repository, open your terminal and run the following command:
+
 ``` gcc -o main.exe main.c game_interface.c game.c `sdl-config --libs` -lSDL_image ```
 
 ``` ./main.exe ``` 
@@ -15,6 +16,7 @@ Clone the repository, open your terminal and run the following command:
 # Requirements 
 
 ✔ SDL 1.2 
+
 ✔ SDL_Images 1.2 
 
 
