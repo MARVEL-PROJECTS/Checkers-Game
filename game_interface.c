@@ -36,8 +36,8 @@ void printBoard(SDL_Surface *screen, gridType grid[][8]) {
 
     }
 
-    whiteElipse = IMG_Load("white_elipse.png");
-    redElipse = IMG_Load("red_elipse.png");
+    whiteElipse = IMG_Load("Sprites/white_elipse.png");
+    redElipse = IMG_Load("Sprites/red_elipse.png");
 
     /* When there is 2 in the grid we fill the square with the white elipse 
         but when it's 1 then we fill it with red elipse */ 
