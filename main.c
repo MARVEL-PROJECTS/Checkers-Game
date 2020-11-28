@@ -20,28 +20,13 @@ int main(int argc, char *argv[]) {
 
     if (screen == NULL)
     {
-        fprintf(stderr, "Erreur d'initialisation SDL %s\n",SDL_GetError());
+        fprintf(stderr, "Initialisation SDL error! %s\n",SDL_GetError());
         exit(EXIT_FAILURE);
     }
 
     SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 255, 255, 255));
     initGame(screen);
-    pause();
     SDL_Quit();
 
     return 0;
-}
-void pause()
-{
-    int continuer = 1;
-    SDL_Event event;
-    while (continuer)
-    {
-        SDL_WaitEvent(&event);
-        switch(event.type){
-    
-            case SDL_QUIT:
-            continuer = 0;
-        }
-    }
 }
