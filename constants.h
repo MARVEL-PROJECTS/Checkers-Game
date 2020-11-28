@@ -1,5 +1,5 @@
-#ifndef const 
-#define const 
+#ifndef consFile
+#define consFile
 
     #define SQUARE_NUMBERS 8
     #define RED 1
